@@ -1,4 +1,4 @@
-.popular{
+.new-collections{
     display: flex;
     flex-direction: flex;
     flex-direction: column;
@@ -6,37 +6,43 @@
     gap: 10px;
     height: 90vh;
 }
-.popular h1{
+.new-collections h1{
     color: #171717;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 600;
 }
-.popular hr{
+.new-collections hr{
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
       /* border: none; */
 }
-.popular-border {
+.new-collections-border {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
     margin-top: 10px; /* Space between text and border */
 }
-.popular-item{
+.new-collections-item{
     margin-top: 50px;
     display: flex;
     gap:1px;
 
 }
-.popular-item img {
-    width: 250px; /* Set a specific width */
-    height: 300px; /* Set a specific height */
+.new-collections-item img {
+    width: 150px; /* Set a specific width */
+    height: 200px; /* Set a specific height */
     object-fit: cover; 
 }
-.popular-item:hover {
+.new-collections-item:hover {
     transform: scale(1.05);
     transition: 0.6s;
+}
+.collections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
 }
