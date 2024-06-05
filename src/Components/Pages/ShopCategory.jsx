@@ -4,6 +4,7 @@ import { ShopContext } from '../Context/ShopContext';
 import dropdown_icon from '../Assets/dropdown_icon.png'
 import all_product from '../Assets/all_product';
 import Item from '../Item/Item'
+
 const ShopCategory = (props) => {
   const {all_product} = useContext(ShopContext);
   return (
@@ -19,9 +20,10 @@ const ShopCategory = (props) => {
     </div>
     <div className='shopcategory-products'>
       { all_product.map((item,i)=>{
-        console.log(all_product);
+      
         if(props.category === item.category){
-          return <Item  key={i}
+          return <Item  
+          key={i}
           id={item.id}
           name={item.name}
           image={item.image}
@@ -33,6 +35,9 @@ const ShopCategory = (props) => {
         }
       })}
     </div>
+    <div className='shopcategory-loadmore'>
+      Explore More
+      </div>
     </div>
   );
 }
